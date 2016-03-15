@@ -1,0 +1,375 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+/*サイト名*/
+
+.site h1 a {
+  color: #000;
+  text-decoration: none;
+}
+.site img {
+  border: none;
+}
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+
+/*header image*/
+
+.topimg {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*キャッチコピー*/
+
+.catch {
+  margin: 0;
+  font-size: 28px;
+}
+/*ヘッダー画像にキャッチコピーを重ねる*/
+.top {
+  position: relative;
+}
+.catch {
+  position: absolute;
+  bottom: 7%;
+  left: 3%;
+  background-color: rgba(237, 229, 222, 0.43);
+  padding: 15px;
+}
+
+/*概要*/
+
+.gaiyo i {
+  font-size: 38px;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.gaiyo .fa-database {
+  background-color: #bfbd13;
+}
+.gaiyo .fa-bar-chart-o {
+  background-color: #c58839;
+}
+.gaiyo .fa-envelope {
+  background-color: #859f46;
+}
+.gaiyo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.gaiyo p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  background-color: #422707;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.gaiyo a {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.gaiyo a:hover {
+  opacity: 0.8;
+}
+
+/*box4*/
+
+.news {
+  padding: 20px;
+  border: solid 5px #ddd;
+}
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  ;
+}
+.news ul li a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  font-size: 15px;
+  padding: 5px;
+  border-bottom: dotted 2px #ddd;
+}
+.news ul li a:hover {
+  background-color: #eee;
+}
+.news time {
+  color: #888;
+  font-weight: bold;
+}
+.news h1 {
+  font-size: 18px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.news a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.news time {
+  float: left;
+  width: 60px;
+}
+.news .text {
+  float: none;
+  width: auto;
+  margin-left: 60px;
+}
+
+/*SNSのデザイン*/
+
+.follow ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.follow li a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.follow li a:hover {
+  opacity: 0.8;
+}
+.tw {
+  background-color: #63bafb;
+}
+.fb {
+  background-color: #5288f7;
+}
+.gp {
+  background-color: #f65d4a;
+}
+.follow i {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*followの補足説明*/
+
+.follow-info {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  font-size: 14px;
+  text-align: center;
+}
+.follow-info {
+  position: relative;
+  background: #ddd;
+}
+.follow-info:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(221, 221, 221, 0);
+  border-top-color: #ddd;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+/*#########copyright###########################################*/
+
+.copyright p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+/*#########boxの左右の余白##################################################*/
+
+.boxA, .box4, .box5 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*##############footerをバーの形にする###################################################*/
+
+.box5 {
+  background-color: #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*################boxの上下の間隔######################################################*/
+
+.boxA {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.box4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.box4-1 {
+  padding-bottom: 20px;
+}
+.box3 {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*#########ブレイクポイント600px##############################*/
+
+@media (max-width:767px) {
+  /*ナビゲーション*/
+  .menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  .menu li a {
+    padding: 10px 7px;
+    font-size: 11px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+  .menu li a:hover {
+    background-color: #eee;
+  }
+
+
+  /*キャッチコピー*/
+  .catch {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+}
+
+/*最低でも768pxのディスプレイの時の表示*/
+
+@media (min-width: 768px) {
+
+  /*ナビゲーション*/
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #b1ecff;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .menu li a:hover {
+    background-color: #e1f6fd;
+  }
+  .menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .menu li {
+    float: left;
+    width: auto;
+  }
+
+
+  /*box1とbox2横に並べる*/
+  .boxA:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .box1 {
+    float: left;
+    width: auto;
+  }
+  .box2 {
+    float: right;
+    ;
+    width: auto;
+  }
+  /*box4-1 box4-2を横に並べる*/
+  .box4::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .box4-1 {
+    float: left;
+    width: 69%;
+    padding-right: 2%;
+  }
+  .box4-2 {
+    float: left;
+    width: 29%;
+  }
+  /*box6を横並びにする*/
+  .box6::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .box6-1 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .box6-2 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .box6-3 {
+    float: left;
+    width: 32%;
+  }
+}
+
+/*###########ブレイクポイント1190px################################*/
+
+@media (min-width: 1190px) {
+  .box3, .box4, .boxA-inner, .box5-inner, .box6 {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .boxA {
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 20px;
+  }
+}
